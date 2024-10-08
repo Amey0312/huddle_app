@@ -60,7 +60,7 @@ const Navbar = () => {
 
 
     return (
-        <AppBar position="static" sx={{ bgcolor: palette.primary.main }}>
+        <AppBar position="static" sx={{ bgcolor: "#869ceb"  }}>
             <Container >
                 {/* principal Menu */}
                 <Toolbar disableGutters>
@@ -80,7 +80,7 @@ const Navbar = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        JOB PORTAL
+                        Huddle
                     </Typography>
 
                     <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -136,9 +136,9 @@ const Navbar = () => {
                             textDecoration: 'none',
                         }}
                     >
-                        JOB PORTAL
+                       Huddle
                     </Typography>
-                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                    <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } , marginLeft: 4}}>
                         {/* menu desktop */}
 
                         <Button

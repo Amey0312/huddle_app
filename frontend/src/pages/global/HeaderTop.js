@@ -1,4 +1,6 @@
 import * as React from 'react';
+
+import { Link } from 'react-router-dom';
 import { styled, alpha } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -77,13 +79,14 @@ const HeaderTop = () => {
                     >
                         <MenuIcon />
                     </IconButton>
+                    
                     <Typography
                         variant="h6"
                         noWrap
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
-                        HR APP
+                        Huddle 
                     </Typography>
 
                     {/* toggle dark theme */}

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import Button from '@mui/material/Button';
 import { Sidebar, Menu, MenuItem, menuClasses, useProSidebar } from 'react-pro-sidebar';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import GroupAddIcon from '@mui/icons-material/GroupAdd';
@@ -85,12 +86,14 @@ const SidebarAdm = () => {
                             {
                                 userInfo && userInfo.role === 1 ?
                                     <>
+                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}><Link to="/" style={{ color: 'white', textDecoration: "none" }}>Home</Link></Button>
                                         <MenuItem component={<Link to="/admin/dashboard" />} icon={<DashboardIcon />}> Dashboard </MenuItem>
                                         <MenuItem component={<Link to="/admin/users" />} icon={<GroupAddIcon />}> Users </MenuItem>
                                         <MenuItem component={<Link to="/admin/jobs" />} icon={<WorkIcon />}> Jobs </MenuItem>
                                         <MenuItem component={<Link to="/admin/category" />} icon={<CategoryIcon />}> Category </MenuItem>
                                     </> :
                                     <>
+                                        <Button sx={{ my: 2, color: 'white', display: 'block' }}><Link to="/" style={{ color: 'white', textDecoration: "none" }}>Home</Link></Button>
                                         <MenuItem component={<Link to="/user/dashboard" />} icon={<DashboardIcon />}> Dashboard </MenuItem>
                                         <MenuItem component={<Link to="/user/jobs" />} icon={<WorkHistoryIcon />}> Applied Jobs </MenuItem>
                                         <MenuItem component={<Link to="/user/info" />} icon={<Person3Icon />}> Personal Info </MenuItem>
